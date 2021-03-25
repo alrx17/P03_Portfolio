@@ -2,7 +2,7 @@
 /*Main body headings /////////////////////////////////////////////////////////////////*/
 body{
   font-family: 'Noto Sans JP', sans-serif;
-  padding:2rem;
+  margin: 0;
 }
 
 h1{
@@ -87,7 +87,7 @@ width: 30%;
 .button-nav{
   margin-left: auto;
   margin-right: auto;
-  float: left;
+float: left;
   justify-content: center;
   align-items: center;
   text-align: center;

@@ -14,3 +14,26 @@
   justify-content: center;
 
 }
+
+.container-nav{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: content-box;
+  background-color: rgb(0,0,0);
+  width: 100vw;
+  justify-content: space-between;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.box-nav{
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+
+.box-nav:nth-child(4){
+  align-items: center;
+  box-sizing: border-box;
+}
