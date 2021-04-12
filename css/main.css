@@ -109,6 +109,8 @@ width: 30%;
 .footer-link{
   padding-left: 2rem;
   padding-right: 2rem;
+  align-items: center;
+  text-align: center;
   color:rgb(255,255,255);
   font-weight: 500;
   text-decoration: none;
@@ -286,9 +288,38 @@ float: left;
   text-align: left;
 }
 
-/*media queries ////////////////////////////////////////////////*/
+/*media queries 280////////////////////////////////////////////////*/
+@media screen and (max-width: 300px) {
+  .button-nav{
+    font-size: .7rem;
+    padding:.9rem;
+    margin:.4rem;
+  }
 
-@media screen and (max-width: 576px) {
+  .footer-link{
+    padding-left: .7rem;
+    padding-right: .7rem;
+    font-size: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 576px) and (min-width: 300px){
+  .footer-link{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1rem;
+  }
+
+  .button-nav{
+    font-size: .8rem;
+    padding:1rem;
+    margin:.5rem;
+  }
+
+}
+
+@media screen and (max-width: 576px){
 
   .title{
       font-size: 2rem;
@@ -298,12 +329,6 @@ float: left;
     p {
           width: 90%;
           font-size: 1rem;
-    }
-
-    .button-nav{
-      font-size: .8rem;
-      padding:1rem;
-      margin:.5rem;
     }
 
       h1{
@@ -337,10 +362,11 @@ float: left;
 
 
 
+
 }
 
 /* // Medium devices (tablets, 768px and up) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 576px) {
 
   p {
         width: 85%;
