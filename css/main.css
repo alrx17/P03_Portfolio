@@ -96,7 +96,8 @@ width: 30%;
 }
 
 .gallery-img{
-  max-width: 25vw;
+  max-width: 30vw;
+  padding: 2rem;
 }
 
 .project-title{
@@ -243,6 +244,16 @@ float: left;
 
 /* ////////////////////////////////////////////////////////////////////////*/
 
+.target-img{
+  align-self: center;
+  width: 50%;
+  display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+/* ////////////////////////////////////////////////////////////////////////*/
+
 .color-palette-0{
   background-color: rgb(179, 20, 20);
   /* red*/
@@ -360,7 +371,9 @@ float: left;
 
       }
 
-
+      .target-img{
+        width: 90%;
+      }
 
 
 }
@@ -370,6 +383,15 @@ float: left;
 
   p {
         width: 85%;
+  }
+
+}
+
+@media screen and (max-width: 768px){
+
+  .gallery-img{
+    max-width: 45vw;
+    padding: .5rem;
   }
 
 }

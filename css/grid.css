@@ -52,15 +52,14 @@ order: 1;
   flex-wrap: wrap;
   box-sizing: content-box;
   width: 100vw;
-  justify-content: space-between;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin-top: 4rem;
 }
 
 .box-gallery{
 box-sizing: border-box;
-  justify-content: space-between;
+
 
 }
 
