@@ -349,6 +349,9 @@ padding-bottom: 2rem;
 }
 
 @media screen and (max-width: 576px){
+  .img-width{
+    max-width: 80vw;
+  }
 
   .title{
       font-size: 2rem;
