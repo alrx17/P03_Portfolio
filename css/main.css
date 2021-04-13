@@ -36,14 +36,23 @@ h3{
   margin-bottom: 0;
 }
 
-h4{
-  padding: 2rem;
+.projects-h3 {
   font-family: 'Noto Sans JP', sans-serif;
   font-style: thin;
-  font-weight: 500;
+  font-weight: 100;
+  font-size: 2rem;
+  padding:0;
+  margin: 0;
+}
+
+h4{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 600;
   font-size: 1.5rem;
   margin-top: 1rem;
   margin-left: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   width: 50%;
   margin:auto;
 
@@ -72,6 +81,10 @@ li{
     text-align: center;
     font-size: 6rem;
     font-weight: 700;
+}
+
+.project1-title{
+  padding-bottom:2rem;
 }
 
 .dark-title{
@@ -192,6 +205,10 @@ float: left;
     float:left;
 }
 
+.img-width{
+  max-width: 30vw;
+}
+
 .img-link {
   cursor: pointer;
   position: relative;
@@ -250,6 +267,7 @@ float: left;
   display: block;
 margin-left: auto;
 margin-right: auto;
+padding-bottom: 2rem;
 }
 
 /* ////////////////////////////////////////////////////////////////////////*/
