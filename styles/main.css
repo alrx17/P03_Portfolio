@@ -40,6 +40,7 @@ h3 {
   font-weight: 100;
   font-size: 2rem;
   padding: 0;
+  padding-bottom: 1.5rem;
   margin: 0;
 }
 
@@ -99,6 +100,7 @@ li {
 
 .dark-background {
   background-color: black;
+  height: 100vh;
 }
 
 .section-title {
@@ -112,6 +114,14 @@ li {
   margin-right: auto;
   margin-top: 10%;
   width: 70%;
+}
+
+.nav-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  width: 45%;
 }
 
 .gallery-img {
@@ -187,6 +197,13 @@ li {
   width: 100%;
 }
 
+.footer-text{
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
 /*//////interactive elements//////////////////////////*/
 .footer-link {
   padding-left: 2rem;
@@ -251,6 +268,26 @@ li {
 
 .button-nav:hover:after, .button-nav:hover:before {
   transform: translate(0);
+}
+
+.btn-basic {
+  background-color: #B31414;
+  color: white;
+  padding: 0.6rem 1.5rem 0.6rem 1.3rem;
+  cursor: pointer;
+  font-family: "Noto Sans JP", sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:5rem;
+  font-size: 1rem;
+
+  transition-duration: 0.2s;
+}
+
+.btn-basic:hover, .btn-basic:focus {
+  color: white;
+  background-color: #CA1616;
 }
 
 .in-text-link {
@@ -335,12 +372,6 @@ li {
   text-align: left;
 }
 
-.project-button {
-  font-size: 1.5rem;
-  padding-top: 0.5rem;
-  margin-bottom: 2rem;
-  color: black;
-}
 
 /*media queries 280////////////////////////////////////////////////*/
 @media screen and (max-width: 300px) {
@@ -372,6 +403,10 @@ li {
 @media screen and (max-width: 576px) {
   .img-width {
     max-width: 80vw;
+  }
+
+  .home-img{
+    width: 30%
   }
 
   .title {
