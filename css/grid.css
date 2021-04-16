@@ -78,6 +78,8 @@ box-sizing: border-box;
 .box-footer{
   box-sizing: border-box;
   padding-bottom: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 
