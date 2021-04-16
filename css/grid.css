@@ -68,13 +68,16 @@ box-sizing: border-box;
   flex-direction: row;
   flex-wrap: wrap;
   box-sizing: content-box;
-  justify-content: center;
+  margin: auto;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 
 .box-projects{
   box-sizing: content-box;
-  padding:2rem;
+  padding: 2rem;
+  padding-top: 3rem;
+  padding-left: 6rem;
 }
 
 /*/////////////////////////////////////////////////////////////////////////////*/
@@ -137,9 +140,7 @@ order: 1;
 
 @media screen and (max-width: 768px) {
 
-  .box-projects{
-    padding:0;
-  }
+
 
   .box-title{
     padding:0;
@@ -148,5 +149,14 @@ order: 1;
   .box-bio{
     padding:0;
   }
+
+}
+
+@media screen and (max-width: 576px){
+
+  .box-projects{
+    padding-left: 1rem;
+  }
+
 
 }
