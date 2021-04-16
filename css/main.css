@@ -2,7 +2,6 @@
 /*Main body headings /////////////////////////////////////////////////////////////////*/
 body{
   font-family: 'Noto Sans JP', sans-serif;
-  margin: 0;
 }
 
 h1{
@@ -68,6 +67,11 @@ p{
   margin-bottom: 2rem;
 
 }
+
+a{
+font-family: 'Noto Sans JP', sans-serif;
+}
+
 li{
   font-family: 'Noto Sans JP', sans-serif;
   font-style: thin;
@@ -75,7 +79,7 @@ li{
   font-size: 1rem;
 }
 
-/* /////////////////////////////////////////////////////////////////*/
+/* Asthetic elements /////////////////////////////////////////////////////////////////*/
 
 .title{
     text-align: center;
@@ -87,13 +91,18 @@ li{
   padding-bottom:2rem;
 }
 
+.project-title{
+  box-sizing: content-box;
+  background-color: rgb(0,0,0);
+}
+
 .dark-title{
   color: rgb(255,255,255);
 }
 
 .dark-background{
   background-color: rgb(0,0,0);
-    width: 100vw;
+
 }
 
 .section-title{
@@ -114,10 +123,61 @@ width: 30%;
   padding: 2rem;
 }
 
-.project-title{
-  box-sizing: content-box;
-  background-color: rgb(0,0,0);
+
+.section-dividers{
+  border-top: 4px solid rgb(220, 24, 24);
+  border-bottom: 4px solid rgb(220, 24, 24);
+  padding: 2rem;
+  width: 90vw;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
+
+.bio{
+  text-align: left;
+  padding-top: 1rem;
+  padding-left: .5rem;
+  padding-right: 1rem;
+  width: 50vw;
+}
+
+.about-me-more{
+  text-align: left;
+  padding-top: 1rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  width: 30vw;
+  margin:0;
+}
+
+.about-title{
+  padding-left: 0;
+  margin: 0;
+  padding-top:2rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  text-align: left;
+}
+
+.float-left{
+    display: block;
+    float:left;
+}
+
+.img-width{
+  max-width: 30vw;
+}
+
+.target-img{
+  align-self: center;
+  width: 50%;
+  display: block;
+margin-left: auto;
+margin-right: auto;
+padding-bottom: 2rem;
+}
+
 /*//////interactive elements//////////////////////////*/
 
 .footer-link{
@@ -187,27 +247,22 @@ float: left;
 }
 
 .in-text-link{
-  color:rgb(179, 20, 20);
-  font-weight: 500;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  color:rgb(255,255,255);
+  font-weight: 200;
   text-decoration: none;
   transition-duration: 0.5s;
 }
 
 .in-text-link:hover, .in-text-link:focus{
   color: rgb(202, 22, 22);
-  border-bottom: 1px dotted rgb(220, 24, 24);
+  border-bottom: 5px dotted rgb(220, 24, 24);
 }
 
-/*/////////////////////////////////////////////////////*/
+/*/Interactive Image////////////////////////////////////////////////////*/
 
-.float-left{
-    display: block;
-    float:left;
-}
-
-.img-width{
-  max-width: 30vw;
-}
 
 .img-link {
   cursor: pointer;
@@ -259,29 +314,6 @@ float: left;
   align-items: center;
 }
 
-/* Project Page////////////////////////////////////////////////////////////////////////*/
-
-.target-img{
-  align-self: center;
-  width: 50%;
-  display: block;
-margin-left: auto;
-margin-right: auto;
-padding-bottom: 2rem;
-}
-
-/* about page////////////////////////////////////////////////////////////////////////*/
-
-.bio{
-  text-align: left;
-  padding-top: 1rem;
-  width: 50vw;
-}
-
-.about-title{
-  padding-left: 0;
-
-}
 
 /* /////////////////////////////////////////////////////////////////*/
 
@@ -419,6 +451,7 @@ padding-bottom: 2rem;
         width: 85%;
   }
 
+
 }
 
 @media screen and (max-width: 768px){
@@ -428,10 +461,26 @@ padding-bottom: 2rem;
     padding: .5rem;
   }
 
+  .bio{
+    width: 90vw;
+  }
+
+
+  .img-width {
+    max-width: 70vw;
+}
+
+.about-me-more{
+  width:90vw;
+}
+
 }
 
 /* // Large devices (desktops, 992px and up) */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .about-me-more{
+    width: 40vw;
+  }
 
 }
 
