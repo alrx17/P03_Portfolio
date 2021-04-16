@@ -1,11 +1,24 @@
+$dark-red: #B31414;
+$logo-red: #AE272D
+$hover-red: #CA1818;
+$bright-red: #CA1616;
+$white: #ffffff;
+$black: #000000;
+$dark-grey: #333333;
+$light-grey: #ebebeb;
 
-/*Main body headings /////////////////////////////////////////////////////////////////*/
-body{
+
+@mixin font {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+/*Main body headings /////////////////////////////////////////////////////////////////*/
+body{
+  @include font;
+}
+
 h1{
-  font-family: 'Noto Sans JP', sans-serif;
+  @include font;
   font-style: thin;
   font-weight: 100;
   font-size: 4rem;
@@ -14,7 +27,7 @@ h1{
 }
 
 h2{
-  font-family: 'Noto Sans JP', sans-serif;
+  @include font;
   font-style: bold;
   font-weight: 600;
   font-size: 3rem;
@@ -25,7 +38,7 @@ h2{
 }
 
 h3{
-  font-family: 'Noto Sans JP', sans-serif;
+  @include font;
   font-style: thin;
   font-weight: 100;
   font-size: 2rem;
@@ -36,7 +49,7 @@ h3{
 }
 
 .projects-h3 {
-  font-family: 'Noto Sans JP', sans-serif;
+  @include font;
   font-style: thin;
   font-weight: 100;
   font-size: 2rem;
@@ -45,7 +58,7 @@ h3{
 }
 
 h4{
-  font-family: 'Noto Sans JP', sans-serif;
+  @include font;
   font-weight: 600;
   font-size: 1.5rem;
   margin-top: 1rem;
@@ -57,7 +70,7 @@ h4{
 
 }
 p{
-  font-family: 'Noto Sans JP', sans-serif;
+  @include font;
   font-style: thin;
   font-weight: 100;
   font-size: 1.5rem;
@@ -69,11 +82,11 @@ p{
 }
 
 a{
-font-family: 'Noto Sans JP', sans-serif;
+@include font;
 }
 
 li{
-  font-family: 'Noto Sans JP', sans-serif;
+  @include font;
   font-style: thin;
   font-weight: 100;
   font-size: 1rem;
@@ -97,16 +110,16 @@ li{
 }
 
 .dark-title{
-  color: rgb(255,255,255);
+  color: $white;
 }
 
 .dark-background{
-  background-color: rgb(0,0,0);
+  background-color: $black;
 
 }
 
 .section-title{
-  border-bottom: 2px solid rgb(51, 51, 51);
+  border-bottom: 2px solid $dark-grey;
   margin-bottom: 4rem;
 }
 
@@ -130,8 +143,8 @@ width: 30%;
 
 
 .section-dividers{
-  border-top: 4px solid rgb(174,39,45);
-  border-bottom: 4px solid rgb(174,39,45);
+  border-top: 4px solid $logo-red;
+  border-bottom: 4px solid $logo-red;
   padding-top: 2rem;
   padding-bottom: 2rem;
   width: 90vw;
@@ -207,7 +220,7 @@ padding-bottom: 2rem;
 }
 
 .footer-link:hover, .in-text-link:focus{
-  color: rgb(202, 22, 22);
+  color: $bright-red;
 }
 
 
@@ -225,19 +238,19 @@ float: left;
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
-  color: rgb(255,255,255);
+  color: $white;
   text-decoration: none;
   padding:1.5rem;
   margin-bottom:3rem;
   margin:1rem;
   transition-duration: 0.5s;
-  background-color: black;
+  background-color: $black;
   box-shadow: 9px 8px 25px 4px rgb(0 0 0 / 6%);
 
 }
 
 .button-nav:hover, .button-nav:focus{
-    color: rgb(220, 24, 24);
+    color: $hover-red;
 }
 
 .button-nav:after, .button-nav:before {
@@ -247,7 +260,7 @@ float: left;
   left: 0;
   bottom: 0;
   right: 0;
-  border: 2px solid white;
+  border: 2px solid $white;
   transition: transform 0.2s;
 }
 .button-nav:after {
@@ -264,15 +277,15 @@ float: left;
   font-family: 'Noto Sans JP', sans-serif;
   text-align: center;
   font-size: 2rem;
-  color:rgb(255,255,255);
+  color:$white;
   font-weight: 200;
   text-decoration: none;
   transition-duration: 0.5s;
 }
 
 .in-text-link:hover, .in-text-link:focus{
-  color: rgb(202, 22, 22);
-  border-bottom: 5px dotted rgb(220, 24, 24);
+  color: $bright-red;
+  border-bottom: 5px dotted $bright-red;
 }
 
 /*/Interactive Image////////////////////////////////////////////////////*/
@@ -282,7 +295,7 @@ float: left;
   cursor: pointer;
   position: relative;
   padding: 10px 20px;
-  background: white;
+  background: $white;
   font-size: 28px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -301,15 +314,15 @@ float: left;
 .img-link:after {
   top: 10px;
   left: 10px;
-  border-top: 5px solid black;
-  border-left: 5px solid black;
+  border-top: 5px solid $black;
+  border-left: 5px solid $black;
 }
 
 .img-link:before {
   bottom: -1px;
   right: -1px;
-  border-bottom: 5px solid black;
-  border-right: 5px solid black;
+  border-bottom: 5px solid $black;
+  border-right: 5px solid $black;
 }
 
 .img-link:hover {
@@ -342,7 +355,7 @@ float: left;
 .branding-element{
   display: block;
   float: left;
-  border-top: 4px black;
+  border-top: 4px $black;
   text-align: left;
 
 
@@ -352,7 +365,7 @@ float: left;
   font-size: 1.5rem;
   padding-top: .5rem;
   margin-bottom:2rem;
-  color:black;
+  color:$black;
 }
 
 /*media queries 280////////////////////////////////////////////////*/
