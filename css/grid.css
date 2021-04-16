@@ -15,6 +15,23 @@
 
 }
 
+.container-home-nav{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-sizing: content-box;
+  height: 98vh;
+  background-color: rgb(0,0,0);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.box-home-nav{
+  box-sizing: border-box;
+    justify-content: space-between;
+}
+
 .container-nav{
   display: flex;
   flex-direction: row;
